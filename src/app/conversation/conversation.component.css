@@ -1,0 +1,49 @@
+#conversationContainer{
+    background: rgb(0,16,36);
+    background: linear-gradient(180deg, rgba(0,16,36,1) 0%, rgba(9,83,121,1) 35%, rgba(0,212,255,1) 100%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:900px; 
+}
+.friend-nick{
+    color: white;
+}
+.chat-area{
+    background-color: #fefefe;
+    height: 500px;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.avatarImage{
+    border: 2px solid white;
+    height: 110px;
+    width: 110px;
+    margin-top:15px; 
+}
+.message-friend{
+    margin: 15px 15px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: aqua;
+}
+.message-your{
+    margin: 15px 15px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 5px;
+    background-color:green;
+    text-align: right;
+}
+.zumbidoImg{
+    width: 40px;
+    height: 20px;
+    margin: 15px 15px;
+    float: right;
+}
+@media only screen and (max-width: 767px) {
+    .avatarImage{
+        display: none;
+    }
+}

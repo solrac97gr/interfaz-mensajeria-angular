@@ -1,0 +1,46 @@
+<div id="homeContainer">
+  <div class="whiteBorderGlassBox">
+    <div class="homeHeadContainer">
+      <div class="row">
+        <div class="col-md-auto">
+          <div class="avatarFrameOnline">
+              <img id="homeAvatarPicture" src="assets/img/generic_avatar.png" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <b>Carlos Garcia</b>
+          <div>
+            <span><b>Online</b></span>
+            <br>
+            <span>Uno es feliz cuando logra la felicidad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="search-list-container  margleft15 margright15 margtop15 margbot15">
+    <div class="row">
+      <div class="col">          
+              <input class="input-search form-control" type="text" placeholder="Buscar amigo" [(ngModel)]="query">          
+      </div>
+      <div class="col-md-auto">
+          <img src="assets/img/logo_live_add.png" class="icon">
+       </div>
+    </div>
+    <hr>    
+      <b class="input-title ">Amigos ({{friends.length}}/{{friends.length}})</b>
+      <ng-container class="disblo margbot5" *ngFor="let user of friends | search:query;let i = index">
+        <div class="friendlist ">      
+            <a routerLink = "/conversation/{{user.uid}}" >
+              <img id="status" src="assets/img/{{user.status}}.png" alt="status" height="30px" width="30px">        
+              <b>{{user.nick}} </b>{{user.subnick || 'No subnick'}}<small> {{user.email}}</small>
+                       
+            </a>  
+        </div>  
+      </ng-container>    
+  </div> 
+</div>
+
+
+
+

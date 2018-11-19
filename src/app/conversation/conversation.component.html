@@ -1,0 +1,43 @@
+<div id="conversationContainer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="avatarFriend">
+            <img src="assets/img/generic_avatar.png" class="avatarImage img-fluid margbot500">  
+        </div>
+        <div class="Myavatar">
+          <img src="assets/img/generic_avatar.png" class="avatarImage img-fluid">
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div class="header-conversation">
+          <span class="friend-nick"><b>{{friend.nick}} </b>({{friend.status}})</span>         
+        </div>
+        <hr>
+        <div class="chat-area">
+            <div class="message-friend">
+              <div class="message-own">
+                <span><b>{{friend.nick}} dice:</b></span>
+              </div>
+              <div class="message-content">
+                <p>Lo que sea que quieras decir</p>
+              </div>
+            </div>
+            <div class="message-your">
+                <div class="message-own">
+                  <span><b>Carlos dice:</b></span>
+                </div>
+                <div class="message-content">
+                  <p>Lo que sea que quieras decir bla bla bla bla bla bla</p>
+                </div>
+              </div>  
+        </div>
+        <div class="chat-input">
+          <textarea class="form-control" cols="30" rows="4"></textarea>
+        </div>
+        <a  class="btn btn-primary margtop15">Enviar</a>
+        <img src="assets/img/zumbido.png" class="zumbidoImg img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
