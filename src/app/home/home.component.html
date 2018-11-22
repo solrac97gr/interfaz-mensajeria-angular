@@ -28,7 +28,7 @@
        </div>
     </div>
     <hr>    
-      <b class="input-title ">Amigos ({{friends.length}}/{{friends.length}})</b>
+      <b *ngIf="friends" class="input-title ">Amigos ({{friends.length}}/{{friends.length}})</b>
       <ng-container class="disblo margbot5" *ngFor="let user of friends | search:query;let i = index">
         <div class="friendlist ">      
             <a routerLink = "/conversation/{{user.uid}}" >

@@ -18,7 +18,7 @@
           <div class="boreredContainer margtop15">
             <input [(ngModel)]="email" class="form-control margbot15" type="email" placeholder="ingrese su email">
             <input [(ngModel)]="password" class="form-control margbot15" type="password" placeholder="ingrese su contraseña">
-            <input *ngIf="operation == 'register'" class="form-control margbot15" type="text" placeholder="ingrese nick">
+            <input [(ngModel)]="nick"*ngIf="operation == 'register'" class="form-control margbot15" type="text" placeholder="ingrese nick">
           </div>
           <div class="center margtop15">
             <a (click)="login()" *ngIf="operation == 'login'" class="btn btn-primary">Iniciar Sesion</a>
