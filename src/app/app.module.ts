@@ -18,12 +18,13 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from 'src/environments/environment';
 import { from } from 'rxjs';
+import { AuthenticationGuard } from './services/authentication.guard';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'home', component: HomeComponent},
+  {path: 'home', component: HomeComponent, canActivate: [AuthenticationGuard]},
   {path: 'login', component: LoginComponent},
-  {path: 'profile', component: ProfileComponent},
+  {path: 'profile', component: ProfileComponent, canActivate: [AuthenticationGuard] },
   {path: 'conversation/:uid', component: ConversationComponent}
 ];
 @NgModule({

@@ -6,5 +6,5 @@ age: number;
 email: string;
 friend: boolean;
 uid: any;
-status: status;
+status?: status;
 }
