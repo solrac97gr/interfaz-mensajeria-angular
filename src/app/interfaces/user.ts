@@ -7,4 +7,5 @@ email: string;
 friend: boolean;
 uid: any;
 status?: status;
+avatar?: string;
 }
