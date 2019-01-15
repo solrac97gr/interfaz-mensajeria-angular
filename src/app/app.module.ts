@@ -20,7 +20,8 @@ import { environment } from 'src/environments/environment';
 import { from } from 'rxjs';
 import { AuthenticationGuard } from './services/authentication.guard';
 import { ImageCropperModule } from 'ngx-image-cropper';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {Material} from './material';
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent, canActivate: [AuthenticationGuard]},
@@ -48,7 +49,9 @@ const appRoutes: Routes = [
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
-    ImageCropperModule
+    ImageCropperModule,
+    BrowserAnimationsModule,
+    Material
   ],
   providers: [],
   bootstrap: [AppComponent]

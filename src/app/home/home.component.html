@@ -8,13 +8,15 @@
           </div>
         </div>
         <div class="col">
-          <b>Carlos Garcia</b>
-          <div>
-            <span><b>Online</b></span>
-            <br>
-            <span>Uno es feliz cuando logra la felicidad</span> <br>
-            <a (click)="logout()">Logout</a>
-          </div>
+            <mat-card>               
+              <mat-card-title><b>Carlos Garcia</b></mat-card-title>              
+              <div>
+                <span><b>Online</b></span>
+                <br>
+                <button class="salir" (click)="logout()" mat-button>Salir<mat-icon>exit_to_app</mat-icon></button>                
+              </div></mat-card>
+          
+          
         </div>
       </div>
     </div>
